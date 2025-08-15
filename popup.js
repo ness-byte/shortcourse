@@ -27,7 +27,7 @@ const STORAGE_KEYS = {
 
 const GITHUB_CONFIG = {
     owner: 'ness-byte',
-    repo: 'snippy',
+    repo: 'shortcourse',
     snippetsPath: 'snippets',
     iconsPath: 'icons',
     baseUrl: 'https://api.github.com/repos'

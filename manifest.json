@@ -1,7 +1,7 @@
 {
-  "name": "ACUO design library extension rebuild_v2",
-  "version": "2.2.1",
-  "description": "I'm the wiz, nobody beats me!",
+  "name": "Short Course Design Library extension",
+  "version": "1.0",
+  "description": "Code snippets for ACU Short Courses",
   "manifest_version": 3,
   "author": "Alana Faigen; Agnes Au; Matt Ryan",
   "browser_specific_settings": {
@@ -15,8 +15,8 @@
   
   "action": {
     "default_popup": "popup.html",
-    "default_title": "ACUO design library extension",
-    "default_icon": "icon.png"
+    "default_title": "Short Course Design Library extension",
+    "default_icon": "icon.svg"
   },
 
   "permissions": [
