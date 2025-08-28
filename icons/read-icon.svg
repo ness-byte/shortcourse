@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6 {
+        stroke: #3c1a53;
+      }
+
+      .cls-1, .cls-7 {
+        fill: #f57c75;
+      }
+
+      .cls-1, .cls-6 {
+        stroke-width: 4.11px;
+      }
+
+      .cls-2, .cls-5, .cls-7, .cls-3 {
+        stroke-width: 4.07px;
+      }
+
+      .cls-2, .cls-7, .cls-3 {
+        stroke: #e8e3db;
+      }
+
+      .cls-2, .cls-6 {
+        fill: #e8e3db;
+      }
+
+      .cls-4 {
+        fill: #cc9a0e;
+        stroke-width: 6px;
+      }
+
+      .cls-4, .cls-5, .cls-7, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #3c1a53;
+      }
+
+      .cls-3 {
+        fill: #3f778c;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="200" cy="200" r="176.14"/>
+  <g>
+    <path class="cls-5" d="M294.65,23.59L79.18,56.79c-11.25,1.73-19.04,12.36-17.3,23.61l42.86,278.2c-1.73-11.25,6.05-21.87,17.3-23.61l215.47-33.2L294.65,23.59Z"/>
+    <path class="cls-5" d="M104.74,358.59c1.73,11.25,12.36,19.04,23.61,17.3l192.29-29.62-6.09-39.55-192.5,28.26c-11.25,1.73-19.04,12.36-17.3,23.61"/>
+    <path class="cls-6" d="M326.35,304.9l-204.31,30.08c-11.25,1.73-19.04,12.36-17.3,23.61h0c.68,4.4,2.72,8.26,5.61,11.23l198.95-30.65,17.06-34.27Z"/>
+    <line class="cls-2" x1="76.09" y1="68.43" x2="114.96" y2="320.72"/>
+    <rect class="cls-7" x="152.46" y="83.19" width="88.31" height="88.31" rx="27" ry="27" transform="translate(-17.1 31.42) rotate(-8.76)"/>
+    <line class="cls-3" x1="136.53" y1="217.58" x2="283.81" y2="194.88"/>
+    <line class="cls-3" x1="156.78" y1="231.21" x2="268.6" y2="213.98"/>
+    <line class="cls-3" x1="140.49" y1="264.43" x2="294.13" y2="240.76"/>
+  </g>
+  <path class="cls-6" d="M110.35,369.83l198.95-30.65"/>
+  <polygon class="cls-1" points="137.72 352.58 118.63 355.52 118.63 387.21 129.06 375.17 138.1 386.84 137.72 352.58"/>
+</svg>
