@@ -30,6 +30,7 @@ const GITHUB_CONFIG = {
     repo: 'shortcourse',
     snippetsPath: 'snippets',
     iconsPath: 'icons',
+    wellsPath: 'wells',
     baseUrl: 'https://api.github.com/repos'
 };
 
@@ -41,14 +42,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     const elements = {
         codeView: document.getElementById("code-view"),
         iconsView: document.getElementById("icons-view"),
-        searchView: document.getElementById("search-view"),
+        wellsView: document.getElementById("wells-view"),
         codeTab: document.getElementById("code-tab"),
         iconsTab: document.getElementById("icons-tab"),
-        searchTab: document.getElementById("search-tab"),
-        searchInput: document.getElementById("search-input"),
-        searchResults: document.getElementById("search-results"),
+        wellsTab: document.getElementById("wells-tab"),
         codeGrid: document.getElementById("code-grid"),
         iconsGrid: document.getElementById("icons-grid"),
+        wellsGrid: document.getElementById("wells-grid"),
         modal: document.getElementById("modal"),
         closeModal: document.getElementById("closeModal"),
         buttonLabel: document.getElementById("button-label"),
@@ -170,14 +170,14 @@ document.addEventListener("DOMContentLoaded", async function() {
         const views = {
             code: elements.codeView,
             icons: elements.iconsView,
-            search: elements.searchView
+            wells: elements.wellsView
         };
         
         Object.entries(views).forEach(([key, element]) => {
             element.style.display = key === view ? 'flex' : 'none';
         });
         
-        [elements.codeTab, elements.iconsTab, elements.searchTab].forEach(tab => {
+        [elements.codeTab, elements.iconsTab, elements.wellsTab].forEach(tab => {
             tab.classList.toggle('active', tab.id.startsWith(view));
         });
     }
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Event Listeners for tabs
     elements.codeTab.addEventListener('click', () => switchView('code'));
     elements.iconsTab.addEventListener('click', () => switchView('icons'));
-    elements.searchTab.addEventListener('click', () => switchView('search'));
+    elements.wellsTab.addEventListener('click', () => switchView('wells'));
 
     // Reset all custom buttons to default state
     elements.resetCustomBtn.addEventListener('click', async () => {
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     });
 
-    // Improved search with debouncing
+/*     // Improved search with debouncing
     let searchTimeout;
     elements.searchInput.addEventListener('input', () => {
         clearTimeout(searchTimeout);
@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             ul.appendChild(fragment);
             elements.searchResults.appendChild(ul);
         }, 300); // Debounce delay
-    });
+    }); */
 
     // Modal events
     elements.closeModal.onclick = () => {
@@ -393,8 +393,8 @@ async function loadSnippets(forceRefresh = false) {
         
         // Filter relevant files and prepare batch requests
         const snippetFiles = allFiles.filter(file => 
-            file.path.startsWith(GITHUB_CONFIG.snippetsPath) && 
-            file.path.endsWith('.html')
+            file.path.startsWith(GITHUB_CONFIG.snippetsPath) && file.path.endsWith('.html') ||
+            file.path.startsWith(GITHUB_CONFIG.wellsPath) && file.path.endsWith('.html')
         );
 
         // Batch content requests
@@ -446,6 +446,7 @@ async function loadSnippets(forceRefresh = false) {
                     title: toSentenceCase(fileName.replace('.html', '')),
                     content,
                     isIcon,
+                    isWells: file.path.startsWith(GITHUB_CONFIG.wellsPath),
                     iconUrl
                 };
             });
@@ -581,6 +582,7 @@ async function loadSnippets(forceRefresh = false) {
             
             const fragment = document.createDocumentFragment();
             const iconFragment = document.createDocumentFragment();
+            const wellsFragment = document.createDocumentFragment();
             
             state.snippets.forEach(snippet => {
                 const button = document.createElement('button');
@@ -605,6 +607,9 @@ async function loadSnippets(forceRefresh = false) {
                     // Use the safer updateIconButton function
                     updateIconButton(button, snippet, customSettings);
                     iconFragment.appendChild(button);
+                } else if (snippet.isWells) {
+                    button.textContent = customSettings.label;
+                    wellsFragment.appendChild(button);
                 } else {
                     // Use textContent instead of setting innerHTML
                     button.textContent = customSettings.label;
@@ -621,6 +626,7 @@ async function loadSnippets(forceRefresh = false) {
             
             elements.codeGrid.appendChild(fragment);
             elements.iconsGrid.appendChild(iconFragment);
+            elements.wellsGrid.appendChild(wellsFragment);
         } catch (error) {
             console.error('Initialise buttons error:', error);
             showNotification('Failed to initialise buttons', 'error');
