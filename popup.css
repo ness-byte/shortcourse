@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 } 
 
-#code-view, #icons-view {
+#code-view, #icons-view, #wells-view {
   display: flex;
   justify-content: center;
   height: calc(100% - 20px); /* Account for body margin/padding */
@@ -24,7 +24,7 @@ h2 {
   width: 100%;
 }
 
-#code-grid {
+#code-grid, #wells-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
