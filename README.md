@@ -78,15 +78,15 @@ Please note that this is a streamlined version of the original tool, with some o
 1. Download the [latest version][download-url] of the tool and unzip it, making sure to remove previous old versions if you have any. Inside the unzipped folder will be a folder called `shortcourse-main`.
 2. Go to the Extensions page by clicking the three dots (top right) in the browser, then <b>More tools</b>, then <b>Extensions</b>.
 3. Make sure <b>Developer mode</b> is activated using the toggle in the top right.
-4. Remove the old version of the ACUO design library extension by clicking the <b>Remove</b> button.
+4. If an older version of the extension is installed, remove it by clicking the <b>Remove</b> button.
 5. To load the new extension, click the <b>Load unpacked</b> button and navigate to the `shortcourse-main` folder you unzipped earlier.
 6. Finally, head over to your extensions (the little puzzle icon) and then pin the ACU Short Course design library extension wizard to your toolbar. Now it's easily accessible when you need it.
 
 <h3>Firefox</h3>
 
 1. Download the latest .zip file from our SharePoint. There is no need to unzip it.
-2. Go to the Extensions page by clicking the puzzle icon in the toolbar and then selecting 'Extensions' from the left menu.
-3. In 'Manage Your Extensions', click on the settings icon and select 'Install Add-on From File...'
+2. Go to the <b>Extensions</b> page by clicking the puzzle icon in the toolbar and then selecting 'Extensions' from the left menu.
+3. In <b>Manage Your Extensions</b>, click on the settings icon and select 'Install Add-on From File...'
 4. Navigate to the .zip file you downloaded in step 1 and click open.
 5. Right-click on the wizard icon in the toolbar to pin the extension to the toolbar.
 
