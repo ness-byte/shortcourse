@@ -135,7 +135,7 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-* Email me or contact one of your SDLDs
+* Email me or contact your LDLD
 * [Request feature][request-feature]
 * [Report bug][report-bug]
 * Project link: [https://github.com/ness-byte/shortcourse](https://github.com/ness-byte/shortcourse)
