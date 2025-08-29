@@ -4,21 +4,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ness-byte/snippy">
+  <a href="https://github.com/ness-byte/shortcourse">
     <img src="icon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">ACUO design library extension 2.2.1</h3>
+<h3 align="center">ACU Short Course design library extension 1.0</h3>
 
   <p align="center">
     I'm the wiz, nobody beats me!
     <br />
-    <a href="https://github.com/ness-byte/snippy/archive/refs/heads/main.zip"><strong>Download tool</strong></a>
+    <a href="https://github.com/ness-byte/shortcourse/archive/refs/heads/main.zip"><strong>Download tool</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ness-byte/snippy/issues/new?labels=bug&template=bug-report---.md">Report bug</a>
+    <a href="https://github.com/ness-byte/shortcourse/issues/new?labels=bug&template=bug-report---.md">Report bug</a>
     &middot;
-    <a href="https://github.com/ness-byte/snippy/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
+    <a href="https://github.com/ness-byte/shortcourse/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
   </p>
 </div>
 
@@ -47,13 +47,12 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This is a combination of Agnes' wizardry in development work, Gil's original extension tool and Alana's amazing search tool. With recent changes to icons, code snippets, and the Azure CDN, it was time to revisit this tool and bring it into 2025!
+This is the short course version of ACUO's snippy tool.
 
 This tool will contain the following:
-* Code snippets for design elements within the ACUO design library
+* Code snippets for design elements within the ACU Short Course design library
 * Icon code snippets
-* (New!) Search functionality
-* (New!) Customise your buttons
+* Customise your buttons
 * Alt text visibility toggle
 * Compatibility with Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox
 
@@ -76,12 +75,12 @@ Please note that this is a streamlined version of the original tool, with some o
 
 <h3>Chrome and Edge</h3>
 
-1. Download the [latest version][download-url] of the tool and unzip it, making sure to remove previous old versions if you have any. Inside the unzipped folder will be a folder called `snippy-main`.
+1. Download the [latest version][download-url] of the tool and unzip it, making sure to remove previous old versions if you have any. Inside the unzipped folder will be a folder called `shortcourse-main`.
 2. Go to the Extensions page by clicking the three dots (top right) in the browser, then <b>More tools</b>, then <b>Extensions</b>.
 3. Make sure <b>Developer mode</b> is activated using the toggle in the top right.
 4. Remove the old version of the ACUO design library extension by clicking the <b>Remove</b> button.
-5. To load the new extension, click the <b>Load unpacked</b> button and navigate to the `snippy-main` folder you unzipped earlier.
-6. Finally, head over to your extensions (the little puzzle icon) and then pin the ACUO design library extension wizard to your toolbar. Now it's easily accessible when you need it.
+5. To load the new extension, click the <b>Load unpacked</b> button and navigate to the `shortcourse-main` folder you unzipped earlier.
+6. Finally, head over to your extensions (the little puzzle icon) and then pin the ACU Short Course design library extension wizard to your toolbar. Now it's easily accessible when you need it.
 
 <h3>Firefox</h3>
 
@@ -91,16 +90,19 @@ Please note that this is a streamlined version of the original tool, with some o
 4. Navigate to the .zip file you downloaded in step 1 and click open.
 5. Right-click on the wizard icon in the toolbar to pin the extension to the toolbar.
 
-<h3>Hot tip #1: Refresh!</h3>
+<h3>Hot tip #1: Use ctrl-/ to comment/uncomment!</h3>
+Where snippets have multiple options (e.g. different aspect ratios for images), these have been included in the snippet code but commented out. Use the keyboard shortcut <b>ctrl-/</b> to select the one you need, and delete the rest to keep your code clean.
+
+<h3>Hot tip #2: Refresh!</h3>
 Use the <b>Refresh files</b> button every now and then to ensure you have the latest version of code snippets (but don't hit this button more than once an hour).
 
-<h3>Hot tip #2: Add a hotkey for the extension</h3>
+<h3>Hot tip #3: Add a hotkey for the extension</h3>
 On your extensions page, click the burger menu on the left, then click <b>Keyboard shortcuts</b>. Choose whatever hotkey you like (e.g. ctrl-D), then click <b>Update</b>.
 
-<h3>Hot tip #3: Alt text visibility</h3>
+<h3>Hot tip #4: Alt text visibility</h3>
 Refresh the page after ticking the checkbox to activate alt text visibility.
 
-<h3>Hot tip #4: Failed to initialise extension</h3>
+<h3>Hot tip #5: Failed to initialise extension</h3>
 If you get a 'failed to initialise extension' error, wait a little while before trying again.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +110,6 @@ If you get a 'failed to initialise extension' error, wait a little while before 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [X] Integrate search functionality
 - [X] Add readme
     - [ ] Add screenshots to instructions
 - [X] Cross-browser compatibility
@@ -118,7 +119,7 @@ If you get a 'failed to initialise extension' error, wait a little while before 
     - [X] Editable code snippets
     - [X] Coloured button borders
     
-See the [open issues](https://github.com/ness-byte/snippy/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ness-byte/shortcourse/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,12 +138,12 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 * Email me or contact one of your SDLDs
 * [Request feature][request-feature]
 * [Report bug][report-bug]
-* Project link: [https://github.com/ness-byte/snippy](https://github.com/ness-byte/snippy)
+* Project link: [https://github.com/ness-byte/shortcourse](https://github.com/ness-byte/shortcourse)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-url]: https://github.com/ness-byte/snippy/graphs/contributors
-[license-url]: https://github.com/ness-byte/snippy/blob/main/LICENSE.txt
-[download-url]: https://github.com/ness-byte/snippy/archive/refs/heads/main.zip
-[request-feature]: https://github.com/ness-byte/snippy/issues/new?labels=enhancement&template=feature-request---.md
-[report-bug]: https://github.com/ness-byte/snippy/issues/new?labels=bug&template=bug-report---.md
+[contributors-url]: https://github.com/ness-byte/shortcourse/graphs/contributors
+[license-url]: https://github.com/ness-byte/shortcourse/blob/main/LICENSE.txt
+[download-url]: https://github.com/ness-byte/shortcourse/archive/refs/heads/main.zip
+[request-feature]: https://github.com/ness-byte/shortcourse/issues/new?labels=enhancement&template=feature-request---.md
+[report-bug]: https://github.com/ness-byte/shortcourse/issues/new?labels=bug&template=bug-report---.md
