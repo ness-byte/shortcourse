@@ -569,6 +569,7 @@ async function loadSnippets(forceRefresh = false) {
                 // Clear existing content
                 elements.codeGrid.innerHTML = '';
                 elements.iconsGrid.innerHTML = '';
+                elements.wellsGrid.innerHTML = '';
                 
                 // Append the new elements
                 elements.codeGrid.appendChild(noSnippetsDiv.cloneNode(true));
