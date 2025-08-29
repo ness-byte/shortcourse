@@ -87,7 +87,7 @@ Please note that this is a streamlined version of the original tool, with some o
 1. Download the latest .zip file from our SharePoint. There is no need to unzip it.
 2. Go to the <b>Extensions</b> page by clicking the puzzle icon in the toolbar and then selecting 'Extensions' from the left menu.
 3. In <b>Manage Your Extensions</b>, click on the settings icon and select 'Install Add-on From File...'
-4. Navigate to the .zip file you downloaded in step 1 and click open.
+4. Navigate to the .zip file you downloaded in step 1 and click <b>Open</b>.
 5. Right-click on the wizard icon in the toolbar to pin the extension to the toolbar.
 
 <h3>Hot tip #1: Use ctrl-/ to comment/uncomment!</h3>
